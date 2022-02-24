@@ -1,0 +1,147 @@
+.div-aside {
+  width: 20%;
+  height: 98%;
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  z-index: 10000;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.aside-mesure {
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(245, 245, 245);
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 4px;
+}
+
+.aside-operateur {
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(245, 245, 245);
+  border: 2px solid black;
+  border-right: none;
+  border-radius: 25px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 4px;
+}
+
+.button-mesure {
+  background: rgb(163, 253, 163);
+  border-radius: 25px;
+  border: rgb(2, 87, 2) solid 2px;
+  display: flex;
+  justify-content: center;
+}
+
+.button-mesure:hover {
+  background: rgb(99, 156, 99);
+}
+
+.button-operateur {
+  background: rgb(163, 242, 253);
+  border-radius: 25px;
+  border: rgb(2, 84, 87) solid 2px;
+  display: flex;
+  justify-content: center;
+}
+
+.button-operateur:hover {
+  background: rgb(99, 149, 156);
+}
+
+.button-output {
+  background: rgb(253, 163, 163);
+  border-radius: 25px;
+  border: rgb(87, 2, 2) solid 2px;
+  display: flex;
+  justify-content: center;
+}
+
+.button-output:hover {
+  background: rgb(156, 99, 99);
+}
+
+.div-canvas {
+  padding: 5px;
+  height: 740px;
+  width: 78%;
+  border: black solid 1px;
+  /* background: rgb(243, 243, 243); */
+}
+
+/* old code transfix to make things happen */
+
+.dndflow {
+  flex-direction: column;
+  display: flex;
+  height: 800px;
+  width: 79%;
+}
+
+.reactflow-wrapper {
+  flex-grow: 1;
+  height: 800px;
+  width: 79%;
+  z-index: 1;
+}
+
+.ReactFP {
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .dndflow {
+      flex-direction: row;
+  }
+}
+
+.react-flow {
+  position: static;
+}
+
+.node-operateur {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  height: 65px;
+  width: 65px;
+  border: rgb(0, 59, 63) solid 2px;
+  border-radius: 5px;
+  background: rgb(145, 242, 255);
+}
+
+.node-mesure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  height: 65px;
+  width: 130px;
+  border: rgb(3, 85, 0) solid 2px;
+  border-radius: 5px;
+  background: rgb(133, 255, 139);
+}
+
+.node-output {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  height: 65px;
+  width: 130px;
+  border: rgb(99, 0, 0) solid 2px;
+  border-radius: 5px;
+  background: rgb(255, 178, 178);
+}
