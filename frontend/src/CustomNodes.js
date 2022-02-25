@@ -14,7 +14,7 @@ const nodeMesure = ({ data, isConnectable }) => {
                 type="source"
                 position="right"
                 id="mesure_a"
-                style={{ background: 'black' }}
+                style={{ background: 'black', width: '10px', height: '10px' }}
                 isConnectable={isConnectable}
             />
         </>
@@ -28,7 +28,7 @@ const nodeOutput = ({ data, isConnectable })  => {
                 type="target"
                 position="left"
                 id="output_a"
-                style={{ background: 'black' }}
+                style={{ background: 'black', width: '10px', height: '10px'}}
                 isConnectable={isConnectable}
             />
             <div className='node-output'>
@@ -45,14 +45,14 @@ const nodeOperateur = ({ data, isConnectable }) => {
                 type="target"
                 position="left"
                 id="operateur_a"
-                style={{ top: 10, background: 'black' }}
+                style={{ top: 10, background: 'black', width: '10px', height: '10px' }}
                 isConnectable={isConnectable}
             />
             <Handle 
                 type="target"
                 position="left"
                 id="operateur_b"
-                style={{ bottom:10, background: 'black' }}
+                style={{ bottom:10, background: 'black', width: '10px', height: '10px' }}
                 isConnectable={isConnectable}
             />
             <div className='node-operateur'>
@@ -62,7 +62,7 @@ const nodeOperateur = ({ data, isConnectable }) => {
                 type="source"
                 position="right"
                 id="operateur_c"
-                style={{ background: 'black' }}
+                style={{ background: 'black', width: '10px', height: '10px' }}
                 isConnectable={isConnectable}
             />
         </>
