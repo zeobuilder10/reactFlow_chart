@@ -72,6 +72,14 @@ class App extends Component {
         nodeType: nodeTypes.operateurNode,
         icon: 'close',
         size:'big'
+      },
+      operateur_4: {
+        label: 'and',
+        nodeType: nodeTypes.operateurNode,
+      },
+      operateur_5: {
+        label: 'or',
+        nodeType: nodeTypes.operateurNode,
       }
     }
 
@@ -90,7 +98,7 @@ class App extends Component {
       const reactFlowWrapper = useRef(null);
       const [reactFlowInstance, setReactFlowInstance] = useState(null);
       const [elements, setElements] = useState(initialElements);
-      const onConnect = (params) => setElements((els) => addEdge(params, els));
+      const onConnect = (params) => setElements((els) => addEdge({ ...params, arrowHeadType: 'arrowclosed', style: {  strokeWidth: 3 }}, els));
       const onElementsRemove = (elementsToRemove) => setElements((els) => removeElements(elementsToRemove, els))
 
       const onLoad = (_reactFlowInstance) => setReactFlowInstance(_reactFlowInstance)

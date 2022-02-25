@@ -120,6 +120,23 @@
   background: rgb(145, 242, 255);
 }
 
+.node-operateur-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 65px;
+  border: rgb(0, 59, 63) solid 2px;
+  border-radius: 5px;
+  background: rgb(145, 242, 255);
+}
+
 .node-mesure {
   display: flex;
   align-items: center;

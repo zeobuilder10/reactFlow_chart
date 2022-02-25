@@ -29,7 +29,6 @@ const nodeOutput = ({ data, isConnectable })  => {
                 position="left"
                 id="output_a"
                 style={{ background: 'black', width: '10px', height: '10px'}}
-                isConnectable={isConnectable}
             />
             <div className='node-output'>
                 output
@@ -39,6 +38,20 @@ const nodeOutput = ({ data, isConnectable })  => {
 }
 
 const nodeOperateur = ({ data, isConnectable }) => {
+
+    var item = undefined
+    if (data.icon) {
+        item = 
+        <div className='node-operateur'>
+                <Icon size={data.size} name={data.icon}/>
+        </div>
+    } else {
+        item = 
+            <div className='node-operateur-label'>
+                { data.label }
+            </div>
+    }
+
     return (
         <>
             <Handle 
@@ -55,9 +68,7 @@ const nodeOperateur = ({ data, isConnectable }) => {
                 style={{ bottom:10, background: 'black', width: '10px', height: '10px' }}
                 isConnectable={isConnectable}
             />
-            <div className='node-operateur'>
-                <Icon size={data.size} name={data.icon}/>
-            </div>
+            { item }
             <Handle 
                 type="source"
                 position="right"
